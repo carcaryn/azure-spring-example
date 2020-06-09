@@ -29,3 +29,6 @@ jobs:
         name: azure-webappsite.war
         # A file, directory or wildcard pattern that describes what to upload
         path: target/azure-webappsite.war
+    - name: Deploy to GitHub
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/carcaryn -Dtoken=GH_TOKEN
+
