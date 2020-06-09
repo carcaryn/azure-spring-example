@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Prova Spring SqlServer Azure</title>
+<body>
+<p>Valori letti dal db SQLSERVER</p>
+<ul>
+{% for record in records %}
+    <li>{{ record.name }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
